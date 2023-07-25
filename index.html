@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore India responsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="stylesheet" href="font/stylesheet.css" media="screen" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <title>Explore India</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="navigation">
+          <div class="logo">Explore India</div>
+          <img
+            src="img/nav-icon.svg"
+            class="nav-icon"
+            alt="navigation icon"
+            width="30"
+            height="30"
+          />
+          <ul>
+            <li>
+              <a href="#home"> Home </a>
+            </li>
+            <li>
+              <a href="#about"> About </a>
+            </li>
+            <li>
+              <a href="#tours"> Tours </a>
+            </li>
+            <li>
+              <a href="#offers"> Offers </a>
+            </li>
+            <li>
+              <a href="./login.html"><button class="btn">Login</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION HERO -->
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="heading heading--1 margin-bottom">
+              Explore the cultural beauty of India.
+            </h1>
+            <a href="./dest.html"><button class="btn">Explore now</button></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION SEARCH -->
+      <section class="section-search">
+        <div class="container search-box">
+          <div class="wrapper">
+            <h3>Destination</h3>
+            <div class="custom-select">
+              <select>
+                <option value="agra">Agra</option>
+                <option value="kedarnath">kedharnath</option>
+                <option value="goa">Goa</option>
+                <option value="kerela">Kerela</option>
+                <option value="ooty">Ooty</option>
+                <option value="maldives">Sikkim</option>
+              </select>
+              <span class="arrow"></span>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h3>Date</h3>
+            <div class="custom-date">
+              <input type="date" id="date" />
+              <img src="./img/calendar.svg" alt="" class="calender-icon" />
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <h3>Average Price</h3>
+            <div class="custom-select">
+              <select>
+                <option value="$200">Rs.5000-10000</option>
+                <option value="$500">Rs.10000-15000</option>
+                <option value="$1000">Above Rs.15000</option>
+              </select>
+              <span class="arrow"></span>
+            </div>
+          </div>
+          <button class="btn"><a href="/dest.html" style="text-decoration: none;" > Search </a></button>
+        </div>
+      </section>
+
+      <!-- SECTION ABOUT -->
+      <section class="section-about" id="about">
+        <div class="container about-box" data-aos="fade-up">
+          <div class="about-box__heading">
+            <h3 class="color-blue margin-bottom">About us</h3>
+            <div class="heading heading--1 capitalize">
+              Explore all corners of the India with us
+            </div>
+          </div>
+          <div class="about-box__content">
+            <p class="margin-bottom">
+              We promise to take you on a journey that covers the best of India. We offer travel itineraries designed to ensure you see all the famous landmarks and hidden gems. Our personalized packages cater to your specific interests and preferences. Our expert guides will take you to places off the beaten track, giving you a unique insight into local life. Our team of travel experts is always available to answer your questions and ensure your trip is hassle-free.
+            </p>
+            <button class="btn btn--secondary"><a href="https://en.wikipedia.org/wiki/Tourism_in_India" style="text-decoration: none; color: black;">Read More</a></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION TOURS -->
+      <section class="section-tours" id="tours">
+        <div class="container tour-box" data-aos="fade-up">
+          <header class="tour-box__heading">
+            <h2 class="heading heading--2 color-blue margin-bottom">
+              Our top tours
+            </h2>
+            <p>
+              <h3>Our most loved tour packages served with the divine hospitality of locals.</h3>
+            </p>
+          </header>
+
+          <article class="tour-box__cards">
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/agra.jpg"
+                alt="agra"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">AGRA</h3>
+                  <p class="price">Rs.10000</p>
+                </div>
+
+                <div class="t-card__description">
+                  Historic city in India, home to the Taj Mahal, Agra Fort.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">2 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.9k
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/kedarnath.jpg"
+                alt="kedarnath"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">KEDARNATH</h3>
+                  <p class="price">Rs.15000</p>
+                </div>
+
+                <div class="t-card__description">
+                  Hindu pilgrimage site, nestled in the Himalayas, Kedarnath temple dedicated to Lord Shiva.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">6 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.9k
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/goa.jpg"
+                alt="goa"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">GOA</h3>
+                  <p class="price">Rs.9000</p>
+                </div>
+
+                <div class="t-card__description">
+                  Coastal state in western India, known for beaches and nightlife.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">3 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.8k
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/kerela.jpg"
+                alt="kerela"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">KERELA</h3>
+                  <p class="price">Rs.5000</p>
+                </div>
+
+                <div class="t-card__description">
+                  South Indian state, known for backwaters, beaches, and Ayurvedic treatments.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">3 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.8k
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/ooty.jpg"
+                alt="spain"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">OOTY</h3>
+                  <p class="price">Rs.6000</p>
+                </div>
+
+                <div class="t-card__description">
+                  Hill station in southern India, known for tea plantations and scenic beauty.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">3 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.7k
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="img/sikkim.jpg"
+                alt="maldives"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">SIKKIM</h3>
+                  <p class="price">Rs.7000</p>
+                </div>
+
+                <div class="t-card__description">
+                  Northeastern state in India, known for Himalayan landscapes and Buddhist culture.
+                </div>
+
+                <div class="t-card__items">
+                  <div class="days">2 Days</div>
+                  <div class="likes">
+                    <img
+                      src="img/heart.svg"
+                      alt="heart"
+                      width="20"
+                      height="20"
+                    />
+                    4.8k
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION OFFER -->
+      <section class="section-offer" id="offers">
+        <div class="container offer-box">
+          <div class="offer-box__percentage" data-aos="zoom-in">50%</div>
+          <div class="offer-box__content" data-aos="fade-up">
+            <h2 class="heading heading--2">
+              Special Offer this month on our tours.
+    
+            </h2>
+            <p>
+              Special offer because why not?
+            </p>
+            <button class="btn">book Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION REVIEW -->
+      <section class="section-review">
+        <div class="container review-box" data-aos="fade-up">
+          <header class="review-header">
+            <h3 class="color-blue">Our Reviews</h3>
+            <h2 class="heading heading--2">What the people say about us</h2>
+          </header>
+
+          <article class="review-cards">
+            <div class="r-card">
+              <img
+                src="img/user-1.jpg"
+                alt=""
+                class="r-card__img"
+                width="90"
+                height="90"
+              />
+              <div class="r-card__name">HIMAL</div>
+              <span class="quot">&#8223;</span>
+              <div class="r-card__description">
+                Explore India is an excellent platform for travelers looking for affordable travel booking.
+              </div>
+              <div class="r-card__rating">
+                <img
+                  src="img/star-grp.svg"
+                  alt="star"
+                  width="100"
+                  height="30"
+                />
+              </div>
+            </div>
+
+            <div class="r-card">
+              <img
+                src="img/user-2.jpg"
+                alt=""
+                class="r-card__img"
+                width="90"
+                height="90"
+              />
+              <div class="r-card__name">DIVYANSH</div>
+              <span class="quot">&#8223;</span>
+              <div class="r-card__description">
+                The guides offered are friendly and the services are excellent.
+              </div>
+              <div class="r-card__rating">
+                <img
+                  src="img/star-grp.svg"
+                  alt="star"
+                  width="100"
+                  height="30"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECTION FOOTER -->
+    <footer class="section-footer">
+      <div class="footer-box container">
+        <div class="contact-details">
+          <h2 class="heading heading--2 margin-bottom">Tourism</h2>
+          <ul class="contact-data">
+            <li class="location">Green Pearl, Potheri, 603203</li>
+            <li class="phone">+00 000 000 00</li>
+            <li class="email">admin@exploreindia.com</li>
+            <li class="social">
+              <img
+                src="./img/logo-whatsapp.svg"
+                alt="whatsapp icon"
+                width="35"
+                height="35"
+              />
+
+              <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgyMzk3NDA2LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"> <img
+                src="./img/logo-facebook.svg"
+                alt="facebook icon"
+                width="35"
+                height="35"
+              /></a>
+
+              <img
+                src="./img/logo-instagram.svg"
+                alt="instagram icon"
+                width="35"
+                height="35"
+              />
+
+              <img
+                src="./img/logo-twitter.svg"
+                alt="twitter icon"
+                width="35"
+                height="35"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Quick Links</div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Popular Destination</div>
+          <ul>
+            <li><a href="#tours">Agra</a></li>
+            <li><a href="#tours">Kedarnath</a></li>
+            <li><a href="#tours">Goa</a></li>
+            <li><a href="#tours">Kerela</a></li>
+            <li><a href="#tours">Ooty</a></li>
+          </ul>
+        </nav>
+
+        <div class="newsletter">
+          <div class="newsletter__title">News Letter</div>
+          <div class="newsletter__text">
+            Subscribe our newsletter here:
+          </div>
+          <form class="newsletter__input">
+            <input type="text" placeholder="example@domine.com" />
+            <img
+              src="./img/send.svg"
+              alt="send icon"
+              class="send-icon"
+              width="36"
+              height="36"
+            />
+          </form>
+        </div>
+
+        <div class="legel">
+          <p class="text">Copyright &copy; by Himal & Divyansh&nbsp;</p>
+          
+            <img
+              src="img/github.svg"
+              alt="github"
+              class="github"
+              width="35"
+              height="35"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="index.js"></script>
+  </body>
+</html>
